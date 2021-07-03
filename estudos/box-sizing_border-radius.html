@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/normalize.css"> <!-- Reseta e corrige problemas de configurações que pode ocorrer no CSS de um navegador para outro. Outra forme de instalar é pelo npm (npm install normalize.css) -->
+    
+    <style type="text/css">
+        img {
+            border-radius: 150px; /* border-radius: → Define um arredondamento nas pontas das bordas. OBS: Para um efeito arredondado, definir a metade de pixels do objeto completo */
+        }
+        #quadrado {
+            width: 300px;
+            height: 300px;
+            background-color: red;
+            border-radius: 10px 30px 50px 100px; /* Podem conter 4 parâmetros que corresponde a cada lado do objeto criado */
+        }
+        #quadrado2 {
+            width: 300px;
+            height: 300px;
+            background-color: blue;
+            margin-bottom: 30px;
+            padding: 30px;
+            box-sizing: content-box; /* content-box → Estilo padrão que os paddings e borders serão acrescidos ao tamanho da box */
+            border: 15px solid red;
+        }
+        #quadrado3 {
+            width: 300px;
+            height: 300px;
+            background-color: blue;
+            box-sizing: border-box; /* utilizada para alterar a propriedade padrão da box model, usada para calcular larguras (widths) e alturas (heights) dos elementos
+                                        border-box → A altura e a largura não mais vai ser acrescida pelo padding. O tamanho do objeto que criamos será sempre o tamanho previamente estabelecido */
+            margin-bottom: 30px;
+            padding: 30px;
+            border: 15px solid red;
+        }
+    </style>
+
+    <title>Box Sizing & Cantos arredondados</title>
+</head>
+<body>
+    <h1>Cantos Arredondados</h1>
+    <img src="imagens/darth-vader.jpg" width="300" height="300">
+    <div id="quadrado"></div>
+    <h1>Box Sizing</h1>
+    <div id="quadrado2">Content-box 300x300</div>
+    <div id="quadrado3">Border-box 300x300</div>
+</body>
+</html>
