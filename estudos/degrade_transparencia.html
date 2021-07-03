@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/normalize.css"> <!-- Reseta e corrige problemas de configurações que pode ocorrer no CSS de um navegador para outro. Outra forme de instalar é pelo npm (npm install normalize.css) -->
+    
+    <style type="text/css">
+        #quadrado {
+            width: 200px;
+            height: 200px;
+            margin-left: 50px;
+            background: linear-gradient(red, green, blue); /* linear-gradient() → forma linear de gradiente
+                                                                        - Uso de 2 parâmetros (1ª cor e 2ª cor)
+                                                                        - Uso de 3 parâmetros ou mais (direção, 1ª cor, 2ª cor, 3ªcor...)
+                                                                            - to left
+                                                                            - to right
+                                                                            - to bottom
+                                                                            - to top
+                                                                            - 45deg (graus) */
+            margin-bottom: 50px;
+        }
+        #quadrado1 {
+            width: 200px;
+            height: 200px;
+            margin-left: 50px;
+            background: radial-gradient(red, green, blue); /* radial-gradient() → forma radial de gradiente */
+        }
+        #quadrado2 {
+            width: 200px;
+            height: 200px;
+            margin-left: 50px;
+            background: rgb(84,24,24); /* rgb() → define cores pelo tom de vermelho, verde e azul
+                                                - 1º parâmetro - Red - Tom de vermelho
+                                                - 2º parâmetro - Green - Tom de verde
+                                                - 3º parâmetro - Blue - Tom de azul */
+        }
+        #quadrado2 h2 {
+            background: rgba(0, 0, 0, 0.3); /* rgba() → define cores pelo tom de vermelho, verde, azul e transparência
+                                                    - 1º parâmetro - Red - Tom de vermelho
+                                                    - 2º parâmetro - Green - Tom de verde
+                                                    - 3º parâmetro - Blue - Tom de azul
+                                                    - 4º parâmetro - Alpha - Tom de transparência (1 para total e 0 para nenhum) */
+        }
+    </style>
+
+    <title>Degradês e Transparências</title>
+</head>
+<body>
+    <h1>Degradês</h1>
+    <div id="quadrado"></div>
+    <div id="quadrado1"></div>
+
+    <h1>Transparências</h1>
+    <div id="quadrado2">
+        <h2>Transparências</h2>
+    </div>
+</body>
+</html>
