@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/normalize.css">
+    
+    <style type="text/css">
+        @keyframes mudarCor { /* @keyframes NOME_DA_ANIMAÇÃO {} → Criação de animação */
+            from { /* from {} → Ponto inicial da animação (De) */
+                background-color: red; 
+            } 
+            to { /* to {} → Ponto final da animação (Para) */
+                background-color: blue; 
+            }
+        }
+        #quadrado {
+            width: 300px;
+            height: 300px;
+            margin: 20px;
+            animation-name: mudarCor; /* animation-name: → Ativando a animação. OBS: Para a animação funcionar é necessário da próxima propriedade */
+            animation-duration: 5s; /* animation-duration: → Duração da animação (em segundos) */
+            animation-delay: 2s; /* animation-delay: → Uma pausa a ser dada antes de iniciar a animação (em segundos) */
+            animation-iteration-count: 2; /* animation-interation-count: →Define quantas vezes a animação será repetida antes de parar */
+            animation-direction: alternate; /* animation-direction: → Muda a direção da animação
+                                                - alternate → vai até o fim e retorna ao princípio
+                                                - reverse → faz a animação inversa*/
+            /* animation: mudarCor 5s 2s 2 alternate; /* Usando todas as propriedades acima em uma única linha */
+        }
+    </style>
+
+    <title>Animações</title>
+</head>
+<body>
+    <div id="quadrado"></div>
+</body>
+</html>
