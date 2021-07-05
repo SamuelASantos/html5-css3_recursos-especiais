@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/normalize.css">
+    
+    <style type="text/css">
+        form {
+            margin: 20px;
+        }
+        input {
+            display: block;
+        }
+    </style>
+
+    <title>Novas Tags de Input</title>
+</head>
+<body>
+    <form action="">
+        <label for="name">Nome:</label>
+        <input type="name" id="name" required autofocus> <br/> <!-- required → Exige que o campo seja preenchido
+                                                                    autofocus → Ao carregar a página, o input estará selecionado -->
+
+        <label for="email">E-mail:</label>
+        <input type="email" id="email"> <br/> <!-- email → Formatação própria de e-mail -->
+
+        <label for="number">Número:</label>
+        <input type="number" id="number" min="1" max="10" step="2"> <br/> <!-- number → Só é possível escrever número 
+                                                                                - min="" → Número mínimo permitido (Valores somente com o uso das setas, porém, não conseguirá enviar valores abaixo do permitido)
+                                                                                - max="" → Número máximo permitido (Valores somente com o uso das setas, porém, não conseguirá enviar valores acima do permitido)
+                                                                                - step="" → Pula de número de acordo com a quantidade selecionada -->
+
+        <label for="url">Url:</label>
+        <input type="url" id="url"> <br/> <!-- url → Formatação própria de url´s (Iniciando com http://...) -->
+
+        <label for="search">Procurar:</label>
+        <input type="search" id="search"> <br/> <!-- search → Caixa de texto com um 'botão' para apagar a pesquisa -->
+
+        <label for="range">Marcador:</label>
+        <input type="range" id="range" min="1" max="10" value="2"> <br/> <!-- range → Marcador que arrasta de um lado para outro (Usado em browser mais recentes)
+                                                                                - min=""
+                                                                                - max=""
+                                                                                - value="" → Define o ponto inicial do marcador -->
+
+        <label for="date">Data:</label>
+        <input type="date" id="date"> <br/> <!-- date → Formatação para data -->
+
+        <label for="color">Cores:</label>
+        <input type="color" id="color"> <br/> <!-- color → Abre uma paleta de cores -->
+
+        <input type="submit" value="Enviar">
+    </form>
+</body>
+</html>
