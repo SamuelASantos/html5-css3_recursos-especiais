@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/normalize.css">
+    
+    <style type="text/css">
+        #conteudo {
+            background: #dcdcdc;
+            height: 400px;
+            display: flex; /* Define a div 'pai' como flex e os itens que estão dentro dele serão itens flexíveis */
+            flex-direction: row; /* flex-direction: → Direções em que se deseja alinhar os elementos 
+                                        - row → em linha
+                                        - row-reverse → em linha invertida
+                                        - column → em coluna
+                                        - column-reverse → em coluna invertida*/
+            flex-wrap: wrap; /* flex-wrap: → Define se os itens de um container quebrará para próxima linha 
+                                    - nowrap → Definição padrão (Sem quebras). O itens ficarão apertados para que caiba dentro do container
+                                    - wrap → Haverá quebras de linha caso o item não couber dentro do container
+                                    - wrap-reverse → Haverá quebras de linha mas de forma invertida */
+            justify-content: flex-end; /* justify-content: → Distribuição dos itens horizontalmente 
+                                            - flex-start → Definição padrão que ficará alinhado ao top/left
+                                            - flex-end → Conteúdos ficará alinhado ao top/right
+                                            - center → Itens centralizados
+                                            - space-between → Distribui os itens atribuindo um espaçamento entre eles (O primeiro e o último item fica colado nas extremidades e os itens centrais recebem a distribuição entre eles)
+                                            - space-around → Similar ao 'space-between' porém o primeiro e o último item não fica colado nas extremidades e sim são distribuídos assim como os demais */
+            align-items: flex-end; /* align-items: Distribuição dos itens verticalmente 
+                                        - stretch → Definição padrão em que os itens irão preencher toda a área até completar a altura
+                                        - center → centraliza os itens
+                                        - flex-start → Itens colados na parte superior
+                                        - flex-end → Itens colados na parte inferior
+                                        - baseline → Alinha os itens baseado na linha superior do conteúdo */
+        }
+        .item {
+            background: white;
+            border: 1px solid gray;
+            margin: 10px;
+        }
+    </style>
+
+    <title>Flexbox Container</title>
+</head>
+<body>
+    <div id="conteudo">
+        <div class="item">01</div>
+        <div class="item">02</div>
+        <div class="item">03</div>
+        <div class="item">04</div>
+    </div>
+</body>
+</html>
