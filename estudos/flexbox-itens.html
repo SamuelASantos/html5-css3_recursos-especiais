@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/normalize.css">
+    
+    <style type="text/css">
+        #conteudo {
+            background: #dcdcdc;
+            height: 400px;
+            display: flex;
+        }
+        .item {
+            background: white;
+            border: 1px solid gray;
+            width: 150px;
+            height: 150px;
+            margin: 10px;
+        }
+        .order {
+            order: 1; /* order: → Uma classe que define um número que será a ordem dos itens que estão no container flex. Por padrão a ordem está definida como 0 */
+        }
+        .grow {
+            flex-grow: 1; /* flex-grow: → Define proporção de espaço ocupado por um item. 
+                                - 0 → Valor padrão em que não mudará o tamanho dos itens
+                                - 1 → O item que recebe o valor terá um tamanho diferente dos demais porque irá expandir e ocupar o restante do espaço que o container permitir.
+                                - 2... → Quanto maior o número maior o espaço que o item ocupa e o crescimento proporcional */
+        }
+    </style>
+
+    <title>Flexbox Itens</title>
+</head>
+<body>
+    <div id="conteudo">
+        <div class="item">01</div>
+        <div class="item grow">02</div> <!-- OBS: O tamanho do item do flex-grow também diminuirá até ter o tamanho dos demais itens -->
+        <div class="item order">03</div> <!-- Como os demais itens tem por padrão order 0, esse item específico tem o order 1 então ficará por último -->
+        <div class="item">04</div>
+    </div>
+</body>
+</html>
