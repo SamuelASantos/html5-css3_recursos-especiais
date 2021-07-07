@@ -15,6 +15,12 @@ a:link, a:visited, a:active {
 a:hover{
     color: #227115;
 }
+h3 {
+    color: #227115;   
+    font-size: 1em;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+}
 h4 {
     color: #86521a;
     text-transform: uppercase;
@@ -67,12 +73,30 @@ nav ul li a:hover {
 #conteudo {
     width: 710px;
     float: left;
+    margin-bottom: 20px;
+}
+.artigo {
+    float: left;
+    width: 310px;
+}
+article#video {
+    margin-left: 25px;
+}
+article#mapa {
+    margin-left: 37px;
+}
+article#exposicoes {
+    margin: 15px 0 0 25px;
+}
+article#historia {
+    margin: 15px 0 0 37px;
 }
 aside {
     width: 350px;
     float: right;
     background: #ebe7dd;
     padding-bottom: 30px;
+    margin-bottom: 20px;
 }
 section#visita {
     background: #cdc8b1;
@@ -118,4 +142,15 @@ fieldset {
 }
 legend {
     display: none;
+}
+
+/* RODAPÉ */
+/* ----------------------------------------------------- */
+footer {
+    padding: 20px 0 30px 0;
+    text-align: center;
+    background: url('../img/fundo-rodape.png') no-repeat center top;
+}
+footer>p a {
+    padding: 2px 10px;
 }
